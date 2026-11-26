@@ -59,10 +59,7 @@ public class Profile {
             return false;
         }
         Profile profile = (Profile) o;
-        return Objects.equals(name, profile.name)
-                && Objects.equals(age, profile.age)
-                && Objects.equals(email, profile.email)
-                && Objects.equals(phone, profile.phone);
+        return Objects.equals(name, profile.name) && Objects.equals(age, profile.age) && Objects.equals(email, profile.email) && Objects.equals(phone, profile.phone);
     }
 
     @Override
@@ -72,11 +69,6 @@ public class Profile {
 
     @Override
     public String toString() {
-        return "Profile{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", email='" + email + '\'' +
-                ", phone=" + phone +
-                '}';
+        return "Profile{" + "name='" + name + '\'' + ", age=" + age + ", email='" + email + '\'' + ", phone=" + phone + '}';
     }
 }
